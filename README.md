@@ -1,4 +1,6 @@
-# tolk_project
+# tolk-contracts
+
+There are TON contracts written in TOLK language. For now there is only timelock controller which can be used for delayed execution for specific operations (e.g. update sensetive contract state variables).
 
 ## Project structure
 
