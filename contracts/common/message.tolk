@@ -34,8 +34,8 @@ fun sendSimpleMessage(amount: int, to: slice, body: cell, mode: int) {
     val msg = beginCell()
         .storeUint(0x18, 6)
         .storeSlice(to)
-        .store_coins(amount)
-        .store_uint(1, 107)
+        .storeCoins(amount)
+        .storeUint(1, 107)
         .storeRef(body)
     .endCell();
     sendMessage(msg, mode);
